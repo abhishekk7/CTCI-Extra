@@ -3,7 +3,7 @@ package QuestionsImpl.C1_ArraysAndStrings;
 /**
  * Created by Abhishek Kumar on 7/6/2017.
  */
-public class URLify {
+public class Q3_URLify {
     public static void replaceSpaces(char[] str, int trueLength) {
         int spaceCount = 0, index, i = 0;
         for (i = 0; i < trueLength; i++) {

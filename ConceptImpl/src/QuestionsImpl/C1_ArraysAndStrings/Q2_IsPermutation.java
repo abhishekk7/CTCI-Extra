@@ -3,7 +3,7 @@ package QuestionsImpl.C1_ArraysAndStrings;
 /**
  * Created by Abhishek Kumar on 7/6/2017.
  */
-public class IsPermutation {
+public class Q2_IsPermutation {
     public static boolean isPermutation(String one, String two) {
         if (one.length() != two.length()) return false;
 

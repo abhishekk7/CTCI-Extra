@@ -3,7 +3,7 @@ package QuestionsImpl.C1_ArraysAndStrings;
 /**
  * Created by Abhishek Kumar on 7/6/2017.
  */
-public class IsUnique {
+public class Q1_IsUnique {
     public static boolean hasUniqueChars(String str) {
         if (str.length() > 128) {
             return false;
