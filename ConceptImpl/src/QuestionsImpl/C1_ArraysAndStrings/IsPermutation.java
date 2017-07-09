@@ -1,4 +1,4 @@
-package QuestionsImpl.Chapter1;
+package QuestionsImpl.C1_ArraysAndStrings;
 
 /**
  * Created by Abhishek Kumar on 7/6/2017.

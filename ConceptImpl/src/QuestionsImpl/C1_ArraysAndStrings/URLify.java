@@ -1,6 +1,4 @@
-package QuestionsImpl.Chapter1;
-
-import java.util.Arrays;
+package QuestionsImpl.C1_ArraysAndStrings;
 
 /**
  * Created by Abhishek Kumar on 7/6/2017.
