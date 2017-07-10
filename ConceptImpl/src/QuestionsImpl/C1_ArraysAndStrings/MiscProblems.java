@@ -9,12 +9,13 @@ import java.util.HashMap;
  * removeChars(String source, String remove)
  * reverseWords(String str)
  * strToInt(String str)
+ * twoNonRepeatingInt(int[] repeating) // problem, look into it
  */
 public class MiscProblems {
 
     public static void main(String[] args) {
         System.out.println("firstNonRepeated : " + firstNonRepeated("aasdssfghdggkkh"));
-        System.out.println("removeChars : " + removeChars("hi this is abhishek kumar", "aeiou"));
+        System.out.println("removeChars : " + removeChars("Hi this is Abhishek Kumar", "aeiou"));
         System.out.println("reverseWords : " + reverseWords("Hi my name is Abhishek Kumar"));
 
         System.out.println("strToInt : " + (strToInt("84756") + 1));
@@ -48,13 +49,16 @@ public class MiscProblems {
         boolean[] flags = new boolean[128];
 
         for (char c : r_arr) {
-            flags[c] = true;
+            flags[Character.getNumericValue(c)] = true;
         }
 
         for (char c : s_arr) {
-            if (!flags[c]) {
-                s_arr[index] = c;
-                index++;
+            if (Character.getNumericValue(c) != -1) {
+                if (!flags[Character.getNumericValue(c)]) {
+                    s_arr[index++] = c;
+                }
+            } else {
+                s_arr[index++] = c;
             }
         }
         return new String(s_arr, 0, index);
@@ -123,4 +127,21 @@ public class MiscProblems {
         }
         return stringBuilder.toString();
     }
+
+/*    public static int[] twoNonRepeatingInt(int[] repeating) {
+        int[] result = new int[2];
+        int xor = repeating[0];
+        int set_bit;
+        for (int i = 1; i < repeating.length; i++) {
+            xor = xor ^ repeating[i];
+        }
+        set_bit = xor & ~(xor - 1);
+        for (int i = 0; i < repeating.length; i++) {
+            if ((repeating[i] & set_bit)) {
+                continue;
+            }
+            result
+        }
+        return result;
+    }*/
 }
