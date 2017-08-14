@@ -5,10 +5,10 @@ package QuestionsImpl.C1_ArraysAndStrings;
  */
 public class Q5_One_Away {
     public static void main(String[] args) {
-        System.out.println(isOneEditAway("pale","ple"));
-        System.out.println(isOneEditAway("pale","pole"));
-        System.out.println(isOneEditAway("pale","plc"));
-        System.out.println(isOneEditAway("ple","pale"));
+        System.out.println(isOneEditAway("pale", "ple"));
+        System.out.println(isOneEditAway("pale", "pole"));
+        System.out.println(isOneEditAway("pale", "plc"));
+        System.out.println(isOneEditAway("ple", "pale"));
     }
 
     public static boolean isOneEditAway(String s1, String s2) {

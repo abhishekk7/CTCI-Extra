@@ -20,7 +20,7 @@ public class Q1_IsUnique {
     }
 
     public static void main(String[] args) {
-        String[] words = {"abcde", "hello", "apple", "kite", "padle" };
+        String[] words = {"abcde", "hello", "apple", "kite", "padle"};
         for (String word : words) {
             System.out.println(word + " " + hasUniqueChars(word));
         }

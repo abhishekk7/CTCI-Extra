@@ -1,8 +1,10 @@
 package Common;
 
-import java.util.*;
-import java.awt.*;
 import LinkedListImpl.LinkedListNode;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * Created by Abhishek Kumar on 7/10/2017.
@@ -189,7 +191,7 @@ public class AssortedMethods {
         return buffer.toString();
     }
 
-    /*public static TreeNode randomBST(int N, int min, int max) {
+    public static TreeNode randomBST(int N, int min, int max) {
         int d = randomIntInRange(min, max);
         TreeNode root = new TreeNode(d);
         for (int i = 1; i < N; i++) {
@@ -198,7 +200,7 @@ public class AssortedMethods {
         return root;
     }
 
-    *//* Creates tree by mapping the array left to right, top to bottom. *//*
+    //Creates tree by mapping the array left to right, top to bottom.
     public static TreeNode createTreeFromArray(int[] array) {
         if (array.length > 0) {
             TreeNode root = new TreeNode(array[0]);
@@ -227,7 +229,7 @@ public class AssortedMethods {
         } else {
             return null;
         }
-    }*/
+    }
 
     public static String getLongTextBlob() {
         String book = "As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit. "
@@ -257,7 +259,7 @@ public class AssortedMethods {
 
     public static String[] getListOfWords() {
         // Words in the dictionary.
-        String[] wordList = { "the", "of", "and", "a", "to", "in", "is", "be",
+        String[] wordList = {"the", "of", "and", "a", "to", "in", "is", "be",
                 "that", "was", "world", "awesome", "he", "for", "it", "with",
                 "as", "his", "I", "on", "have", "at", "by", "not", "surely",
                 "they", "this", "attract", "computer", "had", "are", "but",
@@ -595,7 +597,7 @@ public class AssortedMethods {
                 "represent", "skill", "spell", "broken", "arch", "angle",
                 "sick", "swell", "blind", "Contemporary", "engineer",
                 "military", "boundary", "location", "homes", "boil",
-                "officials", "operator", "Senate", "lend", "hearts", "embers", "abused", "resins", "trendy", "ssdsy" };
+                "officials", "operator", "Senate", "lend", "hearts", "embers", "abused", "resins", "trendy", "ssdsy"};
         return wordList;
     }
 }

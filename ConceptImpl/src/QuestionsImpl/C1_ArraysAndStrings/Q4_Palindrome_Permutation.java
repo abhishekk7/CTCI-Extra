@@ -1,7 +1,5 @@
 package QuestionsImpl.C1_ArraysAndStrings;
 
-import java.util.Arrays;
-
 /**
  * Created by Abhishek Kumar on 7/10/2017.
  */

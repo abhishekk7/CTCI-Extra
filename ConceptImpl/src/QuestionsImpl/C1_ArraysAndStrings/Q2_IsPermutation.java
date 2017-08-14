@@ -22,7 +22,7 @@ public class Q2_IsPermutation {
     }
 
     public static void main(String[] args) {
-        String[][] pairs = {{"apple", "papel" }, {"carrot", "tarroc" }, {"hello", "llloh" }};
+        String[][] pairs = {{"apple", "papel"}, {"carrot", "tarroc"}, {"hello", "llloh"}};
         for (String[] pair : pairs) {
             System.out.println(pair[0] + ", " + pair[1] + " : " + isPermutation(pair[0], pair[1]));
         }
