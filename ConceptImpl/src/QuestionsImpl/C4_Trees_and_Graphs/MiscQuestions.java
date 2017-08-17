@@ -9,13 +9,12 @@ public class MiscQuestions {
         TreeNode root = AssortedMethods.createTreeFromArray(array);
         TreeNode root1 = TreeNode.createMinimalBST(array);
 
-        System.out.println(treeHeight(root.left));
-        System.out.println(root1.right.height());
-        System.out.println(treeHeight(root1.left.left));
-        System.out.println(root1.left.left.height());
+        root.print();
+        root1.print();
 
         int[] arr = {4, 8, 10, 12, 14, 20, 22};
         TreeNode lcaRoot = TreeNode.createMinimalBST(arr);
+        lcaRoot.print();
         System.out.println("---LCA---");
         System.out.println(lowestCommonAncestor(lcaRoot, 14, 22).data);
 
